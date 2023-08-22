@@ -5,13 +5,16 @@
   <style>
     body { margin: 0; padding: 20px; font-family: Arial, sans-serif; }
     #messages { margin-bottom: 10px; }
+    form { display: flex; }
+    input[type="text"] { flex: 1; padding: 10px; }
+    input[type="submit"] { padding: 10px 20px; background-color: #4CAF50; color: white; border: none; cursor: pointer; }
   </style>
 </head>
 <body>
   <ul id="messages"></ul>
   <form id="chat-form">
-    <input id="message-input" autocomplete="off" />
-    <button>Send</button>
+    <input type="text" id="message-input" autocomplete="off" placeholder="Type your message...">
+    <input type="submit" value="Send">
   </form>
 
   <script src="/socket.io/socket.io.js"></script>

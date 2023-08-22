@@ -8,7 +8,7 @@ app.use(express.static('public'));
 
 // Route for the homepage
 app.get('/', (req, res) => {
-  res.sendFile('/Users/damon/Documents/GitHub/Chat-App/public/index.html');
+  res.sendFile(__dirname + '/public/index.html');
 });
 
 // Socket.io connection event
@@ -30,7 +30,7 @@ io.on('connection', (socket) => {
 });
 
 // Start the server
-const port = 4000;
+const port = 10000;
 http.listen(port, () => {
   console.log(`Server listening on http://localhost:${port}`);
 });
