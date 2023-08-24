@@ -41,7 +41,7 @@ io.on('connection', (socket) => {
   });
 });
 
-http.listen(28000, () => {
-  console.log('Server is running on http://localhost:28000');
+http.listen(32000, () => {
+  console.log('Server is running on http://localhost:32000');
 });
 // working chat app
